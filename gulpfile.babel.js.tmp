@@ -70,6 +70,7 @@ const webserver = () =>
 const gitDeploy = () =>
     gulp.src("build/**/*")
     .pipe(gh());
+
 const watch = () => {
     gulp.watch(routes.pug.watch, pug);
     gulp.watch(routes.img.src, img);
