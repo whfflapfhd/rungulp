@@ -9,8 +9,7 @@
     "build" : "gulp build",
     "depoly" : "gulp depoly"
   },
-  "keywords": [],
-  "author": "Jang Jae-wan",
+  "keywords": [],  
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.10.2",

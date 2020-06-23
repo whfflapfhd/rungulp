@@ -61,7 +61,7 @@ const js = () =>
     .pipe(uglify())
     .pipe(gulp.dest(routes.js.dest));
 
-const clean = () => del(["build"]);
+const clean = () => del(["build", ".publish"]);
 
 const webserver = () =>
     gulp.src("build")
@@ -84,4 +84,4 @@ const live = gulp.parallel([webserver, watch]);
 
 export const build = gulp.series([prepare, assets]);
 export const dev = gulp.series([build, live]);
-export const depoly = gulp.series([build, gitDeploy]);
+export const depoly = gulp.series([build, gitDeploy, clean]);

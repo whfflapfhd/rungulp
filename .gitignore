@@ -57,5 +57,5 @@ typings/
 
 # next.js build output
 .next
-.publish
+.publish/
 build/
